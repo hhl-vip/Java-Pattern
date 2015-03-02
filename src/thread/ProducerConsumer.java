@@ -65,19 +65,19 @@ class SyncStack{
 		// TODO Auto-generated method stub
 		while (index ==arrWT.length ) {
 			try {
-				this.wait();
+				this.wait();//当窝窝头装满了，需要线程等待
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
-		this.notify();
+		this.notify();//当跳出wait循环后线程需要被唤醒
 		arrWT[index] = wt;
 		index ++;
 	}
 	public synchronized WoTou pop() {
 		// TODO Auto-generated method stub
-		while (index ==0) {
+		while (index ==0) {//当窝窝头用光了，需要线程等待
 			try {
 				this.wait();
 			} catch (InterruptedException e) {
@@ -85,7 +85,7 @@ class SyncStack{
 				e.printStackTrace();
 			}
 		}	
-		this.notify();
+		this.notify();//当跳出wait循环后线程需要被唤醒
 		index --;
 		return arrWT[index];
 		
