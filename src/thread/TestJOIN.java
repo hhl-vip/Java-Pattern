@@ -1,5 +1,9 @@
 package thread;
-
+/**
+ * thread JOIN
+ * @author Tomcatx
+ *
+ */
 public class TestJOIN {
 
 	public static void main(String[] args) {
