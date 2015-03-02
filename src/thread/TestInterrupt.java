@@ -22,6 +22,7 @@ public class TestInterrupt {
 	}
 
 }
+
 class MyThread extends Thread{
 	boolean flag = true;
 	public void run(){
