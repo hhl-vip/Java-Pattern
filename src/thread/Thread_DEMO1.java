@@ -1,5 +1,10 @@
 package thread;
-
+/**
+ * first thread demo
+ * implements Runnable
+ * @author Tomcatx
+ *
+ */
 public class Thread_DEMO1 {
 	public static void main(String[] args) {
 		
