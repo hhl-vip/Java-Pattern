@@ -25,4 +25,4 @@ public class SendFactory {
 		Sender s = sf.produce("mail");
 		s.send();
 	}
-}
+} 
